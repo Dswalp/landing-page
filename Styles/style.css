@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #1f2937;
+   
     
     
 }
@@ -25,9 +26,6 @@ a {
     text-decoration: none;
     color: #e5e7eb;
     
-}
-.content {
-    justify-content: space-around;
 }
 .hero {
     color: #f9faf8;
