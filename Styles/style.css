@@ -6,6 +6,10 @@ body {
 .header {
     display: flex;
     justify-content: space-around;
+    background-color: #1f2937;
+    color: #f9faf8;
+    padding: 16px;
+   
 }
 ul {
     display: flex;
@@ -13,4 +17,9 @@ ul {
     margin: 0;
     padding: 0;
     gap: 16px;
+}
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+    
 }
