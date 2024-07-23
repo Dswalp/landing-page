@@ -33,8 +33,6 @@ a {
   
   
  
-  
-
     }
 
 .hero {
@@ -67,4 +65,10 @@ a {
     align-items: center;
  
    
+}
+.footer {
+    background-color:#1f2937; ;
+    color: white;
+   
+  
 }
