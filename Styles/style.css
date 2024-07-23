@@ -39,5 +39,10 @@ a {
 .button {
     border: none;
     background: #3882F6;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+    
 
 }
