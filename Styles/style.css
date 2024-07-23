@@ -3,6 +3,8 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #1f2937;
+    
+    
 }
 .header {
     display: flex;
@@ -43,6 +45,8 @@ a {
     color: white;
     font-size: 18px;
     padding: 8px;
+    margin: 18px;
+
     
 
 }
