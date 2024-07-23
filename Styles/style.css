@@ -1,9 +1,10 @@
 body {
     font-family: Roboto, sans-serif;
     display: flex;
-    flex-direction: column;
     background-color: #1f2937;
-
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
     
 }
 .header {
@@ -26,18 +27,19 @@ a {
     color: #e5e7eb;
     
 }
-.content {
 
-
-    padding: 120px;
   
+ .content {
+    display: flex;
   
- 
-    }
+ }
+    
 
 .hero {
     color: #f9faf8;
     font-size: 48px;
+    
+    
     
  
     
@@ -45,6 +47,7 @@ a {
 .text {
     color: #e5e7eb;
     font-size: 18px;
+    padding: 10px;
     
 }
 .button {
@@ -63,6 +66,8 @@ a {
 
     background-color: gray;
     align-items: center;
+    padding: 8px;
+    display: flex;
  
    
 }
