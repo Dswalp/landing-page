@@ -36,3 +36,8 @@ a {
     color: #e5e7eb;
     font-size: 18px;
 }
+.button {
+    border: none;
+    background: #3882F6;
+
+}
