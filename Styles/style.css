@@ -2,6 +2,7 @@ body {
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: #1f2937;
 }
 .header {
     display: flex;
@@ -22,4 +23,16 @@ a {
     text-decoration: none;
     color: #e5e7eb;
     
+}
+.content {
+    justify-content: space-around;
+}
+.hero {
+    color: #f9faf8;
+    font-size: 48px;
+    
+}
+.text {
+    color: #e5e7eb;
+    font-size: 18px;
 }
