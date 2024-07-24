@@ -3,8 +3,7 @@ body {
     display: flex;
     background-color: #1f2937;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    
     
 }
 .header {
@@ -30,7 +29,9 @@ a {
 
   
  .content {
-    display: flex;
+
+    padding: 90px;
+    
   
  }
     
@@ -48,6 +49,7 @@ a {
     color: #e5e7eb;
     font-size: 18px;
     padding: 10px;
+    text-align: left;
     
 }
 .button {
@@ -65,15 +67,24 @@ a {
 .image {
 
     background-color: gray;
-    align-items: center;
+    
     padding: 8px;
-    display: flex;
- 
-   
 }
+ .photo {
+    display: flex;
+    
+
+ }
+   
+
 .footer {
     background-color:#1f2937; ;
     color: white;
    
   
+}
+.info {
+ display: flex;
+ flex-direction: row;
+ 
 }
