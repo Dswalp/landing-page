@@ -11,6 +11,11 @@ body {
     color: #f9faf8;
     padding: 16px;
     font-size: 24px;
+   
+}
+.header img {
+    height: 80px;
+    width:80px;
 }
 ul {
     display: flex;
@@ -52,13 +57,11 @@ a {
     margin: 18px;
     align-self: flex-start;
 }
-.image {
 
-    background-color: gray;
-    padding: 8px;
-}
  .photo {
     display: flex;
+    height: 300px;
+    width: 100x;
  }
    
 .footer {
@@ -80,10 +83,12 @@ a {
     padding-top: 100px;
 }
 .container img {
-    width: 300px;
-    height: 120px;
-    border: 3px solid blue;
+    width: 200px;
+    height: 300px;
+   border-radius: 10px;
     border-radius: 8px;  
+    gap: 20px;
+    
 }
 .title {
     color: #1f2937;
