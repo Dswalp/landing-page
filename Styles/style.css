@@ -89,10 +89,18 @@ a {
     background-color:#1f2937; ;
     color: white;
    
+   
   
 }
-.info {
- display: flex;
- flex-direction: row;
+.title {
+
+ background-color: white;
+ text-align: center;
  
+}
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    
 }
