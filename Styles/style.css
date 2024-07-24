@@ -2,9 +2,7 @@ body {
     font-family: Roboto, sans-serif;
     display: flex;
     background-color: #1f2937;
-    flex-direction: column;
-    
-    
+    flex-direction: column;   
 }
 .header {
     display: flex;
@@ -12,7 +10,6 @@ body {
     background-color: #1f2937;
     color: #f9faf8;
     padding: 16px;
-   
 }
 ul {
     display: flex;
@@ -24,41 +21,27 @@ ul {
 a {
     text-decoration: none;
     color: #e5e7eb;
-    
 }
 .left {
     display: flex;
-    flex-direction: column;
-   
+    flex-direction: column;  
 }
-  
  .content {
-
     padding: 90px;
     display: flex;
     justify-content: space-evenly;
-    
-    
-    
-  
  }
     
 
 .hero {
     color: #f9faf8;
     font-size: 48px;
-    
-    
-    
- 
-    
 }
 .text {
     color: #e5e7eb;
     font-size: 18px;
     padding: 10px;
     text-align: left;
-    
 }
 .button {
     border: none;
@@ -69,13 +52,10 @@ a {
     padding: 8px;
     margin: 18px;
     align-self: flex-start;
-    
-
 }
 .image {
 
     background-color: gray;
-    
     padding: 8px;
 }
  .photo {
@@ -96,11 +76,30 @@ a {
 
  background-color: white;
  text-align: center;
+ padding: 32px;
+ 
  
 }
 .container{
     background-color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+    padding-top: 100px;
     
+
+
+}
+.container img {
+    width: 300px;
+    height: 120px;
+    border: 3px solid blue;
+    border-radius: 8px;
+  
+   
+}
+.title {
+    color: #1f2937;
+    font-size: 36px;
 }
