@@ -1,142 +1,191 @@
+/* General Body Styles */
 body {
     font-family: Roboto, sans-serif;
     display: flex;
-    background-color: #1f2937;
-    flex-direction: column;   
+    flex-direction: column;
+    background-color: #1f2937; /* Main page background */
+    margin: 0; /* Remove default margin */
 }
+
+/* Header Styles */
 .header {
     display: flex;
     justify-content: space-around;
+    align-items: center; /* Vertically align items */
     background-color: #1f2937;
     color: #f9faf8;
     padding: 16px;
     font-size: 24px;
-   
 }
+
 .header img {
     height: 80px;
-    width:80px;
+    width: 80px;
 }
-ul {
+
+.header ul { /* Moved from global ul for specificity */
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
     gap: 16px;
 }
-a {
+
+.header a { /* Moved from global a for specificity */
     text-decoration: none;
     color: #e5e7eb;
 }
-.left {
-    display: flex;
-    flex-direction: column;  
-}
- .content {
+
+/* Content Section Styles (Hero) */
+.content { /* Renamed from .content to align with HTML <section class="content"> */
     padding: 90px;
     display: flex;
     justify-content: space-evenly;
- }
-.hero {
-    color: #f9faf8;
-    font-size: 48px;
-}
-.text {
-    color: #e5e7eb;
-    font-size: 18px;
-    padding: 10px;
-    text-align: left;
-}
-.button {
-    border: none;
-    background: #3882F6;
-    border-radius: 8px;
-    color: white;
-    font-size: 18px;
-    padding: 8px;
-    margin: 18px;
-    align-self: flex-start;
+    align-items: center; /* Align items vertically */
+    color: #f9faf8; /* Text color for this section */
 }
 
- .photo {
+.content .left { /* Specific to the left div within .content */
     display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+    gap: 10px; /* Add some space between elements */
+}
+
+.hero { /* Style for the main heading in .content */
+    font-size: 48px;
+    font-weight: bold; /* Make hero text bolder */
+}
+
+.text { /* Style for the paragraph text in .content and .container2 */
+    font-size: 18px;
+    color: #e5e7eb; /* Default for dark backgrounds */
+    padding: 0; /* Removed default padding, handle with gap or margin */
+    text-align: left;
+}
+
+.content .photo { /* Specific to the photo div within .content */
+    display: flex; /* Keep flex if needed for future items */
     height: 300px;
-    width: 100x;
- }
-   
-.footer {
-    background-color:#1f2937; ;
-    color: white;   
-    align-self: center;
+    width: 100%; /* Make it responsive within its container */
+    max-width: 500px; /* Optional: constrain max image width */
 }
-.title {
- background-color: white;
- text-align: center;
- padding: 32px;
+
+.content .photo img { /* Ensure image scales within .photo */
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area nicely */
 }
-.container{
+
+
+/* Information Section Styles */
+.information-section {
     background-color: white;
+    text-align: center;
+    padding: 32px;
+}
+
+.information-section h2 { /* Style for the title of this section */
+    color: #1f2937;
+    font-size: 36px;
+    margin-bottom: 32px; /* Space below the title */
+}
+
+.information-section .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 200px;
-    padding-top: 100px;
+    gap: 52px; /* Added gap for spacing between images */
+    padding-top: 0; /* Removed as title has margin-bottom */
+    padding-bottom: 32px; /* Reduced padding */
 }
-.container img {
+
+.information-section .container img {
     width: 200px;
-    height: 300px;
-   border-radius: 10px;
-    border-radius: 8px;  
-    gap: 20px;
-    
+    height: 200px; /* Made images square */
+    border-radius: 8px;
+    object-fit: cover; /* Ensure images cover the area well */
 }
-.title {
-    color: #1f2937;
-    font-size: 36px;
-}
+
+/* Quote Section Styles */
 .quote {
-    background-color:#e5e7eb ;
+    background-color: #e5e7eb;
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
-   font-weight: 300;
-    padding-left: 20%;
-    padding-right: 20%;
-
+    font-weight: 300;
+    padding: 100px 20%; /* Adjusted padding */
+    text-align: center; /* Center the quote text */
 }
-.container2 {
-    background-color: blue;
+
+/* Modal (Call to Action) Section Styles */
+.modal { /* This is the outer container/section for the call to action */
+    background-color: #1f2937; /* Dark background for the section */
+    padding: 50px 16px; /* Padding for the section */
+    display: flex; /* Added to help center .container2 if needed */
+    justify-content: center; /* Added to help center .container2 */
+    align-items: center; /* Added to help center .container2 */
+}
+
+.container2 { /* This is the content box within the modal section */
+    background-color: #3882F6; /* Blue background for the content box */
+    color: white; /* Text color for content inside */
     display: flex;
     align-items: center;
-    justify-content: center;
-   
-
+    justify-content: space-around; /* Space out content and button */
+    padding: 50px; /* Generous padding */
+    border-radius: 8px;
+    width: 70%; /* Control width of this box */
+    max-width: 800px; /* Max width */
+    gap: 20px; /* Gap between text and button if they wrap */
 }
-button { 
-    background: royalblue;
-    border: 1px solid royalblue;
+
+.container2 .text { /* Overriding general .text for this context */
+    color: #f9faf8; /* Lighter text for blue background */
+    text-align: left;
+}
+
+.header2 { /* For "Call to actions! it's time!" */
+    color: white; /* White text on blue background */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Button Styles */
+/* Base button style */
+button, .button { /* Consolidating .button into the generic button style */
+    background: #3882F6;
+    border: none; /* Removed border for consistency */
     color: white;
     cursor: pointer;
-    padding: 8px 16px;
+    padding: 10px 24px; /* Adjusted padding */
     border-radius: 8px;
-
+    font-size: 18px;
+    font-weight: bold; /* Make button text bold */
+    text-align: center;
 }
-.modal {
-    background: blue;
-    width: 480px;
-    border-radius: 10px;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
-    display: flex;
-    gap: 16px;
-    padding: 16px;
-    padding-left: auto;
-    justify-content: center;
-    align-self: center;
-    margin: 100px;
-    
-  }
-  .header2 {
-    color: white
-    ;
-  }
- 
+
+.button { /* Specific additions for .button if needed, e.g., hero button */
+    align-self: flex-start; /* For the hero button */
+    margin: 18px 0; /* Adjusted margin */
+}
+
+.container2 button { /* Specific styling for button inside .container2 */
+    /* It already inherits the base style, add specifics if needed */
+    /* e.g., if it needs a different border for contrast: */
+    border: 2px solid white;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center; /* Center text in footer */
+    padding: 20px; /* Add some padding */
+    /* align-self: center; Removed, as text-align: center on a block element works */
+}
+
+.footer a { /* Ensure footer links are visible */
+    color: #e5e7eb;
+}
